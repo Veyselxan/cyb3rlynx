@@ -1,4 +1,3 @@
-
 ---
 title: "Reflected XSS in a JSON POST Body (and Why I Almost Ignored It)"
 date: 2026-09-06
@@ -166,12 +165,6 @@ Because `text/plain` leaves the brackets and quotes alone, the payload arrives e
   </body>
 </html>
 ```
-
-<video controls width="100%">
-  <source src="{{ '/assets/video/json post xss.mp4' | relative_url }}" type="video/mp4">
-</video>
-
-{% include embed/video.html src='/assets/video/json post xss.mp4' %}
 
 
 Open the file, form auto-submits, browser navigates, `alert(document.domain)` pops on the target's origin. No clicks, cross-origin, JSON body and all. Clean.
