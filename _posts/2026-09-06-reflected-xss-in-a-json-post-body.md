@@ -166,6 +166,7 @@ Because `text/plain` leaves the brackets and quotes alone, the payload arrives e
 </html>
 ```
 
+{% include embed/video.html src='/assets/video/json post xss.mp4' %}
 
 Open the file, form auto-submits, browser navigates, `alert(document.domain)` pops on the target's origin. No clicks, cross-origin, JSON body and all. Clean.
 
